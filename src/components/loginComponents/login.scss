@@ -1,0 +1,21 @@
+.formWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+
+  &__secondary {
+    margin-top: 2rem;
+    font-size: 12px;
+  }
+}
+
+.ant-form-item {
+  margin-bottom: 0 !important;
+}
+
+.ant-form-item-label
+  > label.ant-form-item-required:not(.ant-form-item-required-mark-optional)::before {
+  content: "" !important;
+}

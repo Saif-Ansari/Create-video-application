@@ -1,0 +1,49 @@
+.leftNavbar__wrapper {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  width: 12%;
+
+  img {
+    width: 75px;
+    margin: 0 auto;
+    @media (max-width: 768px) {
+      width: 55px;
+    }
+  }
+}
+.leftNavbar__userSection {
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  margin-top: 1rem;
+
+  &--userActivity {
+    flex-direction: column;
+    font-size: 2rem;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    div {
+      width: 50%;
+      text-align: center;
+      cursor: pointer;
+    }
+    .active {
+      background-color: #ebf2ff;
+    }
+  }
+
+  &--userAccount {
+    cursor: pointer;
+    margin: 0 auto;
+    img {
+      width: 60px;
+      @media (max-width: 768px) {
+        width: 40px;
+      }
+    }
+  }
+}
