@@ -30,7 +30,6 @@ const Profile = () => {
               name="firstName"
               rules={[
                 {
-                  type: "firstName",
                   required: true,
                   message: "Please enter first name",
                 },
@@ -50,7 +49,6 @@ const Profile = () => {
               name="lastName"
               rules={[
                 {
-                  type: "lastName",
                   required: true,
                   message: "Please enter last name",
                 },
